@@ -1,4 +1,4 @@
-[1:21 pm, 16/03/2020] Smart.Sina: create view view_jobs as 
+
 SELECT j.*,c.category_id,c.category_title,c.category_subtitle,c.category_order,c.category_status,jt.job_type_title,jt.job_type_status,ci.city_name,ci.city_slug_name,st.state_name,st.state_slug_name,cn.country_name,cn.country_slug_name FROM ah_job j
         LEFT JOIN ah_jobs_in_category jc on j.job_id = jc.job_id
         LEFT JOIN ah_category c on c.category_id = jc.category_id
@@ -6,7 +6,7 @@ SELECT j.*,c.category_id,c.category_title,c.category_subtitle,c.category_order,c
         LEFT JOIN ah_city ci on j.city_id = ci.city_id
         LEFT JOIN ah_state st on j.state_id = st.state_id
         LEFT JOIN ah_country cn on j.country_id = cn.country_id
-[1:23 pm, 16/03/2020] Smart.Sina: create view view_jobs2 as 
+
 SELECT j.*,c.category_title,c.category_subtitle,c.category_order,c.category_status,jt.job_type_title,jt.job_type_status,ci.city_name,ci.city_slug_name,st.state_name,st.state_slug_name,cn.country_name,cn.country_slug_name FROM ah_job j
         LEFT JOIN ah_jobs_in_category jc on j.job_id = jc.job_id
         LEFT JOIN ah_category c on c.category_id = jc.category_id
